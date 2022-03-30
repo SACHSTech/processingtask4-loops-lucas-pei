@@ -33,21 +33,21 @@ public class Sketch extends PApplet {
     for (int x = 0; x < 200; x += 20){
       line(x, 0, x, 200);
     }
-    for (int lineY = 0; lineY < height/2; lineY += height/2/10){
-        line(0, lineY, width/2, lineY);
+    for (int lineX = 0; lineX < height/2; lineX += 20){
+        line(0, lineX, 200, lineX);
     }
 
     // Quadrant 2
-    for (int circleX = 225; circleX < (375); circleX += width/10.6){
-      for (int circleY = 25; circleY < (175); circleY += width/10.6){
+    for (int circleY = 20; circleY < 200; circleY += 40){
+      for (int circleX = 220; circleX < 400; circleX += 40){
         fill(189, 55, 99);
           ellipse(circleX, circleY, 25, 25);
       }
     }
     // Quadrant 3
-    for(int line = 0; line <= 200; line++){
-      stroke(line);
-      line(line, 200, line, 400);
+    for(int lineY = 0; lineY <= 200; lineY++){
+      stroke(lineY);
+      line(lineY, 200, lineY, 400);
     }
 
     // Quadrant 4
